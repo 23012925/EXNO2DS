@@ -27,6 +27,9 @@ STEP 8: Use heatmap method of representation to show relationships between two v
 
 ## CODING AND OUTPUT
 
+### Developed by:JANARTHANAN K
+### Register No.:212223040072
+
 ~~~
 import pandas as pd
 import numpy as np
@@ -62,6 +65,9 @@ df.shape
 ~~~
 
 (891, 11)
+
+
+### Categorical data analysis
        
 ~~~
 df.nunique()
@@ -107,6 +113,9 @@ df
 
 ![Screenshot 2024-09-03 083337](https://github.com/user-attachments/assets/8b6e46f2-0568-4b8f-bed5-557ada936974)
 
+
+### Bivariate Analysis
+
 ~~~
 sns.catplot(x="Gender",col="Survived",kind="count",data=df,height=5,aspect=.7)
 ~~~
@@ -137,6 +146,10 @@ sns.jointplot(x="Age",y="Fare",data=df)
 
 ![Screenshot 2024-09-03 083831](https://github.com/user-attachments/assets/a748af80-2ef4-48e2-b6ee-0b94eac18c69)
 
+
+
+### Multivariate Analysis
+
 ~~~
 fig, ax1 = plt.subplots(figsize=(8,5))
 plt = sns.boxplot(ax=ax1,x='Pclass',y='Age',hue='Gender',data=df)
@@ -149,6 +162,10 @@ sns.catplot(data=df,col="Survived",x="Gender",hue="Pclass",kind="count")
 ~~~
 
 ![Screenshot 2024-09-03 084012](https://github.com/user-attachments/assets/7836d240-4977-4149-a314-17253648818c)
+
+
+
+### Co-relation
 
 ~~~
 corr=df.corr()
@@ -166,4 +183,4 @@ sns.pairplot(df)
 
 
 # RESULT
-        <<INCLUDE YOUR RESULT HERE>>
+        We have performed Exploratory Data Analysis on the given data set successfully.
