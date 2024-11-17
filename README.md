@@ -1,10 +1,8 @@
 # EXNO2DS
 # AIM:
-
-      To perform Exploratory Data Analysis on the given data set.
+  To perform Exploratory Data Analysis on the given data set.
       
 # EXPLANATION:
-
   The primary aim with exploratory analysis is to examine the data for distribution, outliers and anomalies to direct specific testing of your hypothesis.
   
 # ALGORITHM:
@@ -183,4 +181,4 @@ sns.pairplot(df)
 
 
 # RESULT
-        We have performed Exploratory Data Analysis on the given data set successfully.
+  We have performed Exploratory Data Analysis on the given data set successfully.
